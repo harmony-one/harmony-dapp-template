@@ -30,6 +30,6 @@ WORKDIR $GOPATH/src/github.com/harmony-one/harmony-test/localnet
 COPY bootstrap bootstrap
 COPY scripts scripts
 
-RUN chmod +x $GOPATH/src/github.com/harmony-one/harmony-test/localnet/scripts/run-localnet.sh
+RUN chmod +x $GOPATH/src/github.com/harmony-one/harmony-test/localnet/scripts/run.sh
 WORKDIR $GOPATH/src/github.com/harmony-one/harmony
-ENTRYPOINT ["/go/src/github.com/harmony-one/harmony-test/localnet/scripts/run-localnet.sh"]
+ENTRYPOINT ["/go/src/github.com/harmony-one/harmony-test/localnet/scripts/run.sh"]
